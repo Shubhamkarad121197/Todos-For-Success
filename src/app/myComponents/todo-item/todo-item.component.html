@@ -1,0 +1,14 @@
+
+<div class="card mb-3">
+    <h5 class="card-header" [ngClass]="{'Strike':!todo.active}">{{todo.title}}</h5>
+    <div class="card-body">
+     
+      <p class="card-text">{{todo.description}}</p>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="onCheckBoxClick(todo)">
+        <label class="form-check-label" for="exampleCheck1">Done</label>
+      </div>
+      <a href="#" class="btn btn-danger" (click)="onClick(todo)">Delete</a>
+    </div>
+  </div>
+

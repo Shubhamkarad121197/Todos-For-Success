@@ -1,0 +1,16 @@
+<div class="container my-3">
+    <form (ngSubmit)="onSubmit()">
+        <div class="mb-3 my-3 form-group">
+          <label for="title" class="form-label">Title</label>
+          <input type="texr" class="form-control" id="title" name="title" [(ngModel)]="title" aria-describedby="emailHelp">
+          
+        </div>
+        <div class="mb-3">
+          <label for="Description" class="form-label">Description</label>
+          <input type="text" class="form-control" id="Description" name="Description" [(ngModel)]="Description">
+        </div>
+        
+        <button type="submit" class="btn btn-success">Add To To-do</button>
+    </form>
+</div>
+
